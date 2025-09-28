@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>세종사이버대학교 경영학과 — 재학생 학업후기</title>
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* 부드러운 카드 호버 효과 */
+    .card-hover{transition:transform .2s ease, box-shadow .2s ease}
+    .card-hover:hover{transform:translateY(-2px); box-shadow:0 10px 24px rgba(2,6,23,.08)}
+  </style>
+</head>
+<body class="bg-gray-50 text-slate-900">
+  <!-- 섹션 래퍼 -->
+  <section class="mx-auto max-w-6xl px-6 py-16">
+    <!-- 헤더 -->
+    <header class="mb-10">
+      <h1 class="text-3xl font-bold tracking-tight">실무에 바로 쓰이는 경영학, 재학생들이 말합니다.</h1>
+      <p class="mt-3 text-lg text-slate-600">다양한 업종의 직장인·창업자·군인이 세종사이버대학교 경영학과에서 어떻게 성장하고 있는지 직접 들려드립니다.</p>
+    </header>
+
+    <!-- 필터 -->
+    <div class="mb-8 flex flex-wrap items-center gap-2">
+      <span class="mr-1 inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 text-sm text-slate-600 ring-1 ring-slate-200">카테고리 보기</span>
+      <button class="filter-btn rounded-full border border-slate-300 bg-white px-4 py-1.5 text-sm" data-cat="대기업 & 공기업">대기업 & 공기업</button>
+      <button class="filter-btn rounded-full border border-slate-300 bg-white px-4 py-1.5 text-sm" data-cat="공사 & 지자체">공사 & 지자체</button>
+      <button class="filter-btn rounded-full border border-slate-300 bg-white px-4 py-1.5 text-sm" data-cat="기타 전문직">기타 전문직</button>
+      <button class="filter-btn rounded-full border border-slate-300 bg-white px-4 py-1.5 text-sm" data-cat="창업자">창업자</button>
+      <button class="filter-btn rounded-full border border-slate-300 bg-white px-4 py-1.5 text-sm" data-cat="자영업">자영업</button>
+      <button class="filter-btn rounded-full border border-slate-300 bg-white px-4 py-1.5 text-sm" data-cat="군인">군인</button>
+    </div>
+
+    <!-- 카드 그리드 -->
+    <div id="grid" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- 대기업 & 공기업 -->
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="대기업 & 공기업">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">특정 시간과 장소에 구애받지 않고 제 일정에 맞게 공부할 수 있었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 대기업 경영지원본부</div>
+      </article>
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="대기업 & 공기업">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">경영학 공부 덕분에 일하면서도 새로운 성장 동력을 얻을 수 있었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 대기업 관리직</div>
+      </article>
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="대기업 & 공기업">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">경영학 원론 수업이 실무 문제 해결에 직접 도움이 되었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 공기업, 20년차</div>
+        <div class="mt-3 rounded-xl bg-blue-50 px-3 py-2 text-sm text-blue-700">💡 도움된 수업: 경영학 원론</div>
+      </article>
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="대기업 & 공기업">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">실제 업무에 바로 적용 가능한 수업이 많아 큰 도움이 되었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 제조업 회사, 15년 경력</div>
+      </article>
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="대기업 & 공기업">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">AI 관련 수업이 실무에 바로 도움이 되었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 보험회사, 20년차</div>
+        <div class="mt-3 rounded-xl bg-blue-50 px-3 py-2 text-sm text-blue-700">💡 도움된 수업: AI 기초, 데이터분석</div>
+      </article>
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="대기업 & 공기업">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">퇴근 후에도 강의를 들을 수 있어서 너무 좋았습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 보험회사, 15년차</div>
+      </article>
+
+      <!-- 공사 & 지자체 -->
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="공사 & 지자체">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">직장 다니면서 출석 부담이 없다는 점이 가장 좋았습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 지자체, 공무원</div>
+      </article>
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="공사 & 지자체">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">시간과 장소 제약 없이 강의 수강이 가능해 직장인에게 최적입니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 구청, 행정직</div>
+      </article>
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="공사 & 지자체">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">경영 수업들이 행정 업무에도 큰 도움이 되었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 공사, 경영지원팀</div>
+      </article>
+
+      <!-- 기타 전문직 -->
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="기타 전문직">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">경영과 데이터분석 수업이 업무 경쟁력을 크게 높여주었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— IT기업 근무자</div>
+        <div class="mt-3 rounded-xl bg-blue-50 px-3 py-2 text-sm text-blue-700">💡 도움된 수업: 데이터분석, 경영정보시스템</div>
+      </article>
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="기타 전문직">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">문화·예술 경영을 위한 이론과 실무를 동시에 배울 수 있었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 음악업계 프로듀서, 싱어송라이터</div>
+      </article>
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="기타 전문직">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">병원 행정 업무에 경영학 지식이 큰 도움이 되었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 병원 행정직 근무</div>
+      </article>
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="기타 전문직">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">해외 출장 중에도 학업을 이어갈 수 있는 유연성이 정말 좋았습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 무역업 종사자</div>
+      </article>
+
+      <!-- 창업자 -->
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="창업자">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">현업과 연계된 과목들이 실제 경영 전략 수립에 도움이 되었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 스타트업 대표</div>
+        <div class="mt-3 rounded-xl bg-blue-50 px-3 py-2 text-sm text-blue-700">💡 도움된 수업: 비즈니스 모델, 전략경영</div>
+      </article>
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="창업자">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">경영학 공부가 제 사업에 새로운 돌파구를 열어주었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 창업자, 교육업 운영</div>
+      </article>
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="창업자">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">경영학을 배우며 제 사업 아이템에 새로운 영감을 얻었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 프리랜서 강사, 창업 준비 중</div>
+      </article>
+
+      <!-- 자영업 -->
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="자영업">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">사업 운영의 방향성을 배우는 데 큰 힘이 되었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 자영업, 10년차</div>
+      </article>
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="자영업">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">다양한 수업 덕분에 경영 전반을 다시 정리할 수 있었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 자영업, 20년차</div>
+      </article>
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="자영업">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">온라인 강의 덕분에 사업과 학업을 병행할 수 있었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 소상공인</div>
+      </article>
+
+      <!-- 군인 -->
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="군인">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">진급을 위해 시작했지만, 학업 성취감이 가장 큰 보람이었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 직업군인, 중견 장교</div>
+      </article>
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="군인">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">세무회계 수업이 자격증 준비에 큰 도움이 되었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 군무원, 10년차</div>
+        <div class="mt-3 rounded-xl bg-blue-50 px-3 py-2 text-sm text-blue-700">💡 도움된 수업: 세무회계</div>
+      </article>
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="군인">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">바쁜 군 생활 중에도 온라인 강의 덕분에 학업을 이어갈 수 있었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 군 장교</div>
+      </article>
+      <article class="card card-hover rounded-2xl bg-white p-6 ring-1 ring-slate-200" data-category="군인">
+        <div class="text-blue-600 text-2xl mb-2">“</div>
+        <p class="leading-relaxed">학업을 통해 진급 준비와 자기계발을 동시에 이룰 수 있었습니다.</p>
+        <div class="mt-4 text-sm text-slate-500">— 군 간부</div>
+      </article>
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-14 rounded-2xl bg-white p-6 ring-1 ring-blue-100 shadow">
+      <div class="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
+        <div>
+          <h2 class="text-xl font-semibold">나도 이렇게 공부하고 싶다면?</h2>
+          <p class="mt-1 text-slate-600">지금 바로 학과 커리큘럼을 확인하거나, 1:1 입학 상담을 신청해 보세요.</p>
+        </div>
+        <div class="flex w-full flex-col gap-2 sm:w-auto sm:flex-row">
+          <a href="#curriculum" class="inline-flex items-center justify-center rounded-md bg-blue-600 px-5 py-2.5 text-white shadow hover:bg-blue-700">학과 커리큘럼 보기</a>
+          <a href="#admission" class="inline-flex items-center justify-center rounded-md border border-slate-300 px-5 py-2.5 text-slate-800 hover:bg-slate-50">입학 문의하기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 간단한 필터 스크립트 -->
+  <script>
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.card');
+    let active = null;
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const cat = btn.dataset.cat;
+        if(active === cat){
+          // 토글 해제: 전체 보기
+          active = null;
+          buttons.forEach(b=>b.classList.remove('bg-blue-600','text-white'));
+          cards.forEach(c=>c.classList.remove('hidden'));
+          return;
+        }
+        active = cat;
+        buttons.forEach(b=>b.classList.toggle('bg-blue-600', b.dataset.cat===cat));
+        buttons.forEach(b=>b.classList.toggle('text-white', b.dataset.cat===cat));
+        buttons.forEach(b=>{ if(b.dataset.cat!==cat){ b.classList.remove('bg-blue-600','text-white'); }});
+        cards.forEach(c=>{
+          c.classList.toggle('hidden', c.dataset.category !== cat);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
